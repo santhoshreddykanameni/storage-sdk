@@ -1,6 +1,6 @@
 {
   "name": "@santhoshk382/storage-sdk",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Universal storage SDK for AWS S3, MinIO, and S3-compatible object storage systems.",
   "main": "src/index.js",
   "type": "commonjs",
