@@ -3,6 +3,12 @@ class StorageService {
     this.provider = provider;
   }
 
+  /*
+   |--------------------------------------------------------------------------
+   | Basic Object Operations
+   |--------------------------------------------------------------------------
+   */
+
   async upload(data) {
     return this.provider.upload(data);
   }
@@ -31,12 +37,60 @@ class StorageService {
     return this.provider.move(source, destination);
   }
 
+  /*
+   |--------------------------------------------------------------------------
+   | Signed URL Operations
+   |--------------------------------------------------------------------------
+   */
+
   async getUploadSignedUrl(data) {
     return this.provider.getUploadSignedUrl(data);
   }
 
-  async getDownloadSignedUrl(key, expiresIn) {
+  async getDownloadSignedUrl(key, expiresIn = 3600) {
     return this.provider.getDownloadSignedUrl(key, expiresIn);
+  }
+
+  /*
+   |--------------------------------------------------------------------------
+   | Multipart Upload Operations
+   |--------------------------------------------------------------------------
+   */
+
+  async createMultipartUpload(data) {
+    return this.provider.createMultipartUpload(data);
+  }
+
+  async getMultipartUploadSignedUrl(data) {
+    return this.provider.getMultipartUploadSignedUrl(data);
+  }
+
+  async completeMultipartUpload(data) {
+    return this.provider.completeMultipartUpload(data);
+  }
+
+  async abortMultipartUpload(data) {
+    return this.provider.abortMultipartUpload(data);
+  }
+
+  /*
+   |--------------------------------------------------------------------------
+   | Health & Monitoring
+   |--------------------------------------------------------------------------
+   */
+
+  async health() {
+    return this.provider.health();
+  }
+
+  /*
+   |--------------------------------------------------------------------------
+   | Provider Capabilities
+   |--------------------------------------------------------------------------
+   */
+
+  capabilities() {
+    return this.provider.capabilities();
   }
 }
 

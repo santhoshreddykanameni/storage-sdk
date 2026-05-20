@@ -5,11 +5,13 @@
   "main": "src/index.js",
   "type": "commonjs",
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.650.0",
-    "@aws-sdk/client-sts": "^3.1047.0",
-    "@aws-sdk/lib-storage": "^3.650.0",
-    "@aws-sdk/s3-request-presigner": "^3.650.0",
-    "dotenv": "^16.4.5"
+    "@aws-sdk/client-s3": "^3.840.0",
+    "@aws-sdk/client-sts": "^3.840.0",
+    "@aws-sdk/lib-storage": "^3.840.0",
+    "@aws-sdk/s3-request-presigner": "^3.840.0",
+    "axios": "^1.16.1",
+    "dotenv": "^16.6.1",
+    "joi": "^17.13.3"
   },
   "keywords": [
     "storage",
@@ -23,5 +25,9 @@
     "storage-sdk"
   ],
   "author": "Santhosh Reddy Kanameni",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:santhoshk382/storage-sdk.git"
+  }
 }

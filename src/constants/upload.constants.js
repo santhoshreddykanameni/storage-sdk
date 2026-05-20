@@ -1,0 +1,7 @@
+module.exports = {
+  MULTIPART_THRESHOLD: 100 * 1024 * 1024,
+
+  DEFAULT_PART_SIZE: 5 * 1024 * 1024,
+
+  DEFAULT_QUEUE_SIZE: 4,
+};

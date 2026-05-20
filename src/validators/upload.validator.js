@@ -1,11 +1,13 @@
+const ValidationError = require("../errors/validation.error");
+
 class UploadValidator {
   static validate({ key, body }) {
     if (!key) {
-      throw new Error("key is required");
+      throw new ValidationError("key is required");
     }
 
     if (!body) {
-      throw new Error("body is required");
+      throw new ValidationError("body is required");
     }
   }
 }
