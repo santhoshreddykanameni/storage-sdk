@@ -1,4 +1,4 @@
-declare module "@santhoshk382/storage-sdk" {
+declare module "@orbit-stream/storage" {
   /*
    |--------------------------------------------------------------------------
    | Upload Progress

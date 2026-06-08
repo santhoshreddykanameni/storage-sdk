@@ -30,7 +30,7 @@ Supports:
 # Installation
 
 ```bash
-npm install @santhoshk382/storage-sdk
+npm install @orbit-stream/storage
 ```
 
 ---
@@ -76,7 +76,7 @@ S3_SECRET_KEY=minioadmin
 # Basic Usage
 
 ```js
-const storage = require("@santhoshk382/storage-sdk");
+const storage = require("@orbit-stream/storage");
 ```
 
 ---
